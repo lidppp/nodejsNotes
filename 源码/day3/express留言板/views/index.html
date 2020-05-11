@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>留言板-查看留言</title>
+    <link rel="stylesheet" href="/public/u-reset.css">
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+
+<body>
+    <h2>
+        留言板
+        <a href="/post">
+            写留言
+        </a>
+    </h2>
+    <div class="title">留言</div>
+    <div class="itemBox">
+        <div class="item">
+            <div class="item-name">姓名</div>
+            <div class="item-word">留言</div>
+            <div class="item-time">时间</div>
+        </div>
+        {{each list}}
+        <div class="item">
+            <div class="item-name hidden1">{{$value.name}}</div>
+            <div class="item-word hidden1">{{$value.word}}</div>
+            <div class="item-time hidden1">{{$value.time}}</div>
+        </div>
+        {{/each}}
+    </div>
+
+
+</body>
+
+</html>

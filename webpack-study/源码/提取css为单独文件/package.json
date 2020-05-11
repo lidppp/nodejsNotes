@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "npx webpack-dev-server",
+    "build": "webpack --mode development",
+    "build2": "webpack --mode production"
+  }
+}

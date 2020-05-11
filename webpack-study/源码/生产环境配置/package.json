@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "npx webpack-dev-server",
+    "build": "webpack --mode development",
+    "build2": "webpack --mode production"
+  },
+  "browserslist":{
+    "development":[
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production":[
+      ">0.01%",
+      "not dead",
+      "not op_mini all"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+<!-- <html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #aa {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="aa">hello </div>
+  <video controls autoplay name="media">
+    <source src="http://localhost:3000/a/asd/190321153853126488.mp4" type="video/mp4">
+  </video>
+</body>
+<script>
+
+  document.querySelector("#aa").onclick = function () {
+    this.innerHTML = "点我了"
+    document.querySelector("video").play()
+  }
+  document.querySelector("video").oncanplay = function () {
+    this.play()
+      .then(() => {
+        console.log("代码生效")
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  };
+
+</script>
+
+</html>
