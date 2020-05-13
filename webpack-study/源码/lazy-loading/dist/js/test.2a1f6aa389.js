@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],[,function(n,o,e){"use strict";function t(...n){return n.reduce((n,o)=>n+o,0)}e.r(o),e.d(o,"add",(function(){return t})),console.log("test被加载了")}]]);
